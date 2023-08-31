@@ -1,1 +1,1 @@
-alert("something"),console.log("Alex");
+(()=>{let t=document.querySelectorAll(".nav_button");const e=e=>{e.target.classList.contains("active")||(t.forEach((t=>t.classList.remove("active"))),e.target.classList.add("active"))};t.forEach((t=>t.addEventListener("click",e)))})();
