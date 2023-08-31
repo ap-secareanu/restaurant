@@ -1,0 +1,1 @@
+document.querySelector(".nav_button").addEventListener("click",(e=>{console.log(e.target.value)})),console.log("mere");
