@@ -1,0 +1,16 @@
+{
+  "name": "restaurant-project",
+  "version": "1.0.0",
+  "description": "A restaurant page",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Alexandru Secareanu",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
