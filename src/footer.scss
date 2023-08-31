@@ -1,0 +1,16 @@
+@import 'vars.scss';
+
+footer {
+    font-family: var(--poppins);
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: 100%;
+    box-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
+    padding-top: 10px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}

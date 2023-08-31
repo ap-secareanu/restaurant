@@ -1,0 +1,18 @@
+@import 'header.scss';
+@import 'home.scss';
+@import 'footer.scss';
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #292a2d;
+    background-image: url('../dist/imgs/background.jpg');
+}
+
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

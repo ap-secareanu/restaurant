@@ -1,3 +1,5 @@
+import homeContent from "./home";
+
 
 let navElements = document.querySelectorAll('.nav_button');
 
@@ -9,3 +11,10 @@ const changeTab = e => {
 };
 
 navElements.forEach(element => element.addEventListener('click', changeTab));
+homeContent();
+
+const goToMenu = () => {
+    console.log('mere');
+};
+
+document.querySelector('.see_menu_button').addEventListener('click', goToMenu);
