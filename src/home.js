@@ -1,9 +1,8 @@
 import './main.css';
-import { mainTitle, subtitle, standardText, container, col12, span, pageContent, div } from './global_vars';
+import { mainTitle, subtitle, standardText, container, col12, span, pageContent, div, button } from './global_vars';
 
 const homeContent = () => {
 
-    const seeMenu = document.createElement('button');
 
     pageContent.classList.add('home');
     container.classList.add('container');
@@ -11,14 +10,14 @@ const homeContent = () => {
     mainTitle.classList.add('title');
     subtitle.classList.add('subtitle');
     div.classList.add('texts');
-    seeMenu.classList.add('see_menu_button');
+    button.classList.add('see_menu_button');
     //* Add CSS Classes
 
 
     subtitle.innerHTML = 'Bar&Grill';
     mainTitle.innerHTML = `Interbelic`;
     standardText.innerHTML = "Welcome to the best <span>BBQ</span> cuisine!";
-    seeMenu.innerHTML = "See menu";
+    button.innerHTML = "See menu";
     //* Change elements values
 
 
@@ -28,7 +27,7 @@ const homeContent = () => {
     div.appendChild(mainTitle);
     div.appendChild(subtitle);
     col12.appendChild(standardText);
-    col12.appendChild(seeMenu);
+    col12.appendChild(button);
     //* Appends to parents for rendering
 
     return pageContent
