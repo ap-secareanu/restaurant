@@ -1,6 +1,7 @@
 @import 'header.scss';
 @import 'home.scss';
 @import 'footer.scss';
+@import 'menu.scss';
 
 body {
     margin: 0;
@@ -15,4 +16,54 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.title {
+    font-family: var(--oswald);
+    color: #fff;
+    font-size: 92px;
+    margin-bottom: -10px;
+}
+
+.subtitle {
+    font-size: 52px;
+    font-family: var(--poppins);
+    color: #333333;
+    text-align: right;
+    transform: rotate(-10deg);
+    text-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
+}
+
+p {
+font-size: 24px;
+font-family: var(--poppins);
+color: #fff;
+
+span {
+    font-size: 32px;
+    text-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
+    color: #333;
+    font-family: var(--oswald);
+}
+}
+
+button {
+font-size: 28px;
+font-family: var(--oswald);
+background-color: rgba(0,0,0,0.5);
+color: #fff;
+border: none;
+box-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
+border-radius: 5px;
+padding: 10px 30px;
+margin: 20px 0;
+transition: .5s;
+&:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+}
+
+.col-12, .col-6 {
+    flex: 0 0 auto!important;
 }

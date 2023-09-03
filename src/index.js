@@ -1,5 +1,5 @@
 import homeContent from "./home";
-
+import menuContent from "./menu";
 
 let navElements = document.querySelectorAll('.nav_button');
 const pageContent = document.querySelector('main');
@@ -21,6 +21,8 @@ const menuButton = document.querySelector('.see_menu_button');
 
 const goToMenu = () => {
     pageContent.innerHTML = '';
+    pageContent.className = '';
+    menuContent();
     navElements.forEach(element => element.classList.remove('active'));
     navMenu.classList.add('active');
 };

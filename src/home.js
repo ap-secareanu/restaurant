@@ -1,8 +1,9 @@
 import './main.css';
-import { mainTitle, subtitle, standardText, container, col12, span, pageContent, div, button } from './global_vars';
+import { mainTitle, subtitle, standardText, container, col12, span, pageContent, div, button, resetVars } from './global_vars';
 
 const homeContent = () => {
 
+    resetVars()
 
     pageContent.classList.add('home');
     container.classList.add('container');
@@ -30,6 +31,7 @@ const homeContent = () => {
     col12.appendChild(button);
     //* Appends to parents for rendering
 
+    
     return pageContent
 };
 

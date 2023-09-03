@@ -9,4 +9,16 @@ const pageContent = document.querySelector('main');
 const div = document.createElement('div');
 const button = document.createElement('button');
 
-export { mainTitle, subtitle, standardText, container, col12, span, pageContent, div, button };
+const resetVars = () => {
+    mainTitle.innerHTML = '';
+    subtitle.innerHTML = '';
+    standardText.innerHTML = '';
+    container.innerHTML = '';
+    col12.innerHTML = '';
+    span.innerHTML = '';
+    pageContent.innerHTML = '';
+    div.innerHTML = '';
+    button.innerHTML = '';
+}
+
+export { mainTitle, subtitle, standardText, container, col12, span, pageContent, div, button, resetVars };
