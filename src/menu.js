@@ -115,7 +115,7 @@ const menuContent = () => {
         dishImg.src = `../src/images/${dish.image}`;
         
 
-        dishCard.classList.add('col-4');
+        dishCard.classList.add('col-md-4');
         container.appendChild(cardsContainer);
         cardsContainer.appendChild(dishCard);
         dishCard.appendChild(dishTitle);

@@ -7,7 +7,7 @@ const homeContent = () => {
 
     pageContent.classList.add('home');
     container.classList.add('container');
-    col12.classList.add('col-12');
+    col12.classList.add('col-md-12');
     mainTitle.classList.add('title');
     subtitle.classList.add('subtitle');
     div.classList.add('texts');

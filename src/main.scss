@@ -3,6 +3,10 @@
 @import 'footer.scss';
 @import 'menu.scss';
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -16,6 +20,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .title {
@@ -23,6 +28,10 @@ body {
     color: #fff;
     font-size: 92px;
     margin-bottom: -10px;
+    @media(max-width: 576px) {
+        font-size: 52px;
+        text-align: center;
+    }
 }
 
 .subtitle {
@@ -32,12 +41,18 @@ body {
     text-align: right;
     transform: rotate(-10deg);
     text-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
+    @media(max-width: 576px) {
+        font-size: 32px;
+    }
 }
 
 p {
 font-size: 24px;
 font-family: var(--poppins);
 color: #fff;
+@media(max-width: 576px) {
+    font-size: 16px;
+}
 
 span {
     font-size: 32px;
@@ -58,6 +73,11 @@ border-radius: 5px;
 padding: 10px 30px;
 margin: 20px 0;
 transition: .5s;
+@media(max-width: 576px) {
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-top: 0;
+}
 &:hover {
     background-color: #ffd700;
     color: #333;
