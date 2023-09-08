@@ -112,7 +112,7 @@ const menuContent = () => {
 
         dishTitle.innerHTML = dish.title;
         dishDetails.innerHTML = dish.details;
-        dishImg.src = `../src/images/${dish.image}`;
+        dishImg.src = `./imgs/${dish.image}`;
         
 
         dishCard.classList.add('col-md-4');
