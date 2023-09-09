@@ -1,56 +1,56 @@
 @import "vars.scss";
 
 header {
-    width: 100%;
-    box-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
-    height: 90px;
-    background-color: rgba(0,0,0,0.5);
-    @media(max-width: 576px) {
-        height: auto;
-    }
-    nav {
-        display: flex;
-        margin-bottom: 10px;
-        align-items: center;
-        justify-content: center;
+  width: 100%;
+  box-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  @media (max-width: 576px) {
+    height: auto;
+  }
+  nav {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
 
-        div {
-            font-family: var(--poppins);
-            position: relative;
-            font-size: 24px;
-            margin: 20px 50px;
-            color: #fff;
-            @media(max-width: 576px) {
-                margin: 20px 20px;
-                font-size: 16px;
-            }
+    div {
+      font-family: var(--poppins);
+      position: relative;
+      font-size: 24px;
+      margin: 20px 50px;
+      color: #fff;
+      @media (max-width: 576px) {
+        margin: 20px 20px;
+        font-size: 16px;
+      }
 
-            &:before {
-                background-color: #292a2d;
-                position: absolute;
-                display: inline-block;
-                border-radius: 10px;
-                width: 0%;
-                height: 2px;
-                content: "";
-                bottom: 0;
-                transition: 0.5s;
-                box-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
-            }
+      &:before {
+        background-color: #292a2d;
+        position: absolute;
+        display: inline-block;
+        border-radius: 10px;
+        width: 0%;
+        height: 2px;
+        content: "";
+        bottom: 0;
+        transition: 0.5s;
+        box-shadow: 0 0 3px #ffd700, 0 0 5px #ffd700;
+      }
 
-            &:hover {
-                cursor: pointer;
+      &:hover {
+        cursor: pointer;
 
-                &:before {
-                    width: 100%;
-                }
-            }
+        &:before {
+          width: 100%;
         }
-
-        .active {
-            &:before {
-                width: 100%;
-            }
-        }
+      }
     }
+
+    .active {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
 }
