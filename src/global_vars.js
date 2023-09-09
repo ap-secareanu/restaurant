@@ -7,7 +7,7 @@ const col12 = document.createElement('div');
 const span = document.createElement('span');
 const pageContent = document.querySelector('main');
 const div = document.createElement('div');
-const button = document.createElement('button');
+const button = document.createElement('a');
 
 const resetVars = () => {
     mainTitle.innerHTML = '';

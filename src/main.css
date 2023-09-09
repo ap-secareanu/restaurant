@@ -59,12 +59,12 @@ header {
 
 .home .container {
   display: inline-block; }
-.home .col-12 {
+.home .col-md-12 {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .home .col-12 .texts {
+  .home .col-md-12 .texts {
     max-width: 400px;
     padding-bottom: 10px; }
 
@@ -219,7 +219,7 @@ p {
     color: #333;
     font-family: var(--oswald); }
 
-button {
+a {
   font-size: 28px;
   font-family: var(--oswald);
   background-color: rgba(0, 0, 0, 0.5);
@@ -229,13 +229,15 @@ button {
   border-radius: 5px;
   padding: 10px 30px;
   margin: 20px 0;
-  transition: .5s; }
+  transition: .5s;
+  text-decoration: none;
+  display: inline-block; }
   @media (max-width: 576px) {
-    button {
+    a {
       font-size: 20px;
       padding: 10px 15px;
       margin-top: 0; } }
-  button:hover {
+  a:hover {
     background-color: #ffd700;
     color: #333; }
 
