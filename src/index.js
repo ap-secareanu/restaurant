@@ -1,5 +1,6 @@
 import homeContent from "./home";
 import menuContent from "./menu";
+import contactContent from './contact';
 
 let navElements = document.querySelectorAll('.nav_button');
 const pageContent = document.querySelector('main');
@@ -41,6 +42,7 @@ navHome.addEventListener('click', goToHome);
 
 const goToContact = () => {
     pageContent.innerHTML = '';
+    contactContent();
     navElements.forEach(element => element.classList.remove('active'));
     navContact.classList.add('active');
 };
